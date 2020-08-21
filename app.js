@@ -1,6 +1,7 @@
 const express = require("express");
 //const morgan = require("morgan");
 const mongoose = require("mongoose");
+require("dotenv/config");
 
 const noteRoutes = require("./routes/noteRouter");
 
@@ -11,10 +12,12 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 //connect to mongo db
-const db =
-  "mongodb+srv://tony:gunners1@cluster0.r3zoz.mongodb.net/notes-backend?retryWrites=true&w=majority";
+const db = "";
 mongoose
-  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.DB_CONNECTION, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then((data) => {
     console.log("connected to database.\nI love Ashley\n<3");
     // listen for requests
