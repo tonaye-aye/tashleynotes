@@ -71,6 +71,13 @@ footer {
 .notes a:hover h2 {
   color: indigo;
 }
+h2.title {
+  font-size: 1.2rem;
+  margin: 0 0 0.1rem 0;
+}
+p.description {
+  font-size: 1.1rem;
+}
 
 /* details styles */
 .details {
@@ -80,15 +87,16 @@ footer {
   position: absolute;
   right: 1rem;
   border-radius: 50%;
+  border: 1px #e6e6e6 solid;
   transform: translateY(-50%);
   top: 50%;
+  padding: 1rem;
 }
 .delete:hover {
   cursor: pointer;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 .delete > img {
-  padding: 1rem;
   width: 2rem;
 }
 
