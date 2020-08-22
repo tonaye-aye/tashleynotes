@@ -13,13 +13,10 @@ const port = process.env.PORT || 5000;
 
 //connect to mongo db
 mongoose
-  .connect(
-    "mongodb+srv://tony:gunners1@cluster0.r3zoz.mongodb.net/notes-backend?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.DB_CONNECTION, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then((data) => {
     console.log("connected to database.\nI love Ashley\n<3");
     // listen for requests
