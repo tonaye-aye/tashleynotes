@@ -66,7 +66,7 @@ footer {
 .notes a {
   display: block;
   margin: 2rem 0;
-  padding: 2rem;
+  padding: 1rem;
   background: white;
   border-radius: 0.3rem;
   border-left: 0.6rem solid indigo;
@@ -97,20 +97,20 @@ p.description {
   border: 1px #e6e6e6 solid;
   transform: translateY(-50%);
   top: 50%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .delete:hover {
   cursor: pointer;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 .delete > img {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 /* create styles */
 div.create-note,
 div.details {
-  padding: 2rem;
+  padding: 1rem;
   background: white;
   border-radius: 0.3rem;
   border-left: 0.6rem solid indigo;
