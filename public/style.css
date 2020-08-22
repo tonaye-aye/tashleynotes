@@ -81,14 +81,15 @@ footer {
 h2.title {
   font-size: 1.2rem;
   margin: 0 0 0.1rem 0;
-  padding: 0 2rem 0 0;
 }
 p.description {
   font-size: 1.1rem;
-  padding: 0 2rem 0 0;
 }
 
 /* details styles */
+.content {
+  padding: 0 2rem 0 0;
+}
 .details {
   position: relative;
 }

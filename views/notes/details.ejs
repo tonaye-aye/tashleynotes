@@ -6,8 +6,8 @@
       <%- include("../partials/nav.ejs") %>
 
       <div class="details content">
-        <h2 class="title"><%= note.title %></h2>
         <div class="content">
+          <h2 class="title"><%= note.title %></h2>
           <p class="description"><%= note.description %></p>
         </div>
         <a class="delete" data-doc="<%= note._id %>"
