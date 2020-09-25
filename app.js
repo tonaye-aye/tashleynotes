@@ -1,5 +1,4 @@
 const express = require("express");
-//const morgan = require("morgan");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
@@ -15,7 +14,7 @@ const port = process.env.PORT || 5000;
 mongoose
   .connect(process.env.DB_CONNECTION, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
   })
   .then((data) => {
     console.log("connected to database.\nI love Ashley\n<3");
@@ -30,7 +29,6 @@ app.set("view engine", "ejs");
 // static files & middleware
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-//app.use(morgan("dev"));
 app.use((req, res, next) => {
   res.locals.path = req.path;
   next();
@@ -47,6 +45,6 @@ app.use("/notes", noteRoutes);
 // 404 page
 app.use((req, res) => {
   res.render("404", {
-    title: "Not found!",
+    title: "Not found!"
   });
 });
