@@ -1,6 +1,6 @@
 # Full-stack note taking app
 
-A simple not taking app that allows you to write notes to a database and also delete notes.
+A simple note taking app that allows you to write notes to a database, and also delete them.
 
 Built with;
 - Node, Express
