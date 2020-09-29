@@ -7,6 +7,6 @@ Built with;
 - EJS
 - MongoDB
 
-[Demo](https://oph8m.csb.app/)
+[Demo](https://tashleynotes.herokuapp.com/)
 
 [More projects](https://devtones.me/)
